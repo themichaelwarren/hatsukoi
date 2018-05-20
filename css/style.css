@@ -40,7 +40,7 @@ body {
     grid-column-gap: 10px;
     height: 100vh;
     margin: 0;
-    font-family: 'Lato', 'Kokoro', 'Hannari', serif;
+    font-family: 'Lato', 'Noto Sans Japanese', serif!important;
 }
 
 header,
