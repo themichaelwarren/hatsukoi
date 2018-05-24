@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/earlyaccess/hannari.css);
+
 body, html { height:100%; overflow:visible; } 
 
 .vertical {
@@ -5,6 +7,8 @@ body, html { height:100%; overflow:visible; }
   -moz-writing-mode: vertical-rl;
   -ms-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
+  font-family: 'Hannari', serif;
+  width: 100vw;
 }
 
 .wrapper {box-sizing: border-box; height: 100%; overflow: auto; }
