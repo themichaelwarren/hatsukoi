@@ -1,8 +1,7 @@
 body {font-family: Montserrat, Helvetica Neue, sans-serif; margin: 0 auto; line-height: 2em; padding: 12px; box-sizing: border-box; color: #fff; overflow: auto;}
 body, html { height:100%; overflow:visible; } 
-body {
-	background: linear-gradient(270deg, #EFA00B, #D65108, #261C15);
-	background-size: 600% 600%;
+vertical {
+	color: linear-gradient(270deg, #EFA00B, #D65108, #261C15);
 	-webkit-animation: Gradient 60s ease infinite;
 	-moz-animation: Gradient 60s ease infinite;
 	animation: Gradient 60s ease infinite;
@@ -24,6 +23,13 @@ body {
 		50%{background-position:100% 50%}
 		100%{background-position:0% 50%}
 	}
+
+.vertical {
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
 
 .wrapper {box-sizing: border-box; height: 100%; overflow: auto; }
 
