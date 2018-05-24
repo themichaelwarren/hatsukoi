@@ -3,11 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style2.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <title>HATSUKOI FOUR</title>
+<style>
+@import url(//fonts.googleapis.com/earlyaccess/hannari.css);
+
+body, html { height:100%; overflow:visible; } 
+
+.vertical {
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  font-family: 'Hannari', serif;
+  width: 50vw;
+  font-size: 12vh;
+}
+
+.linear-wipe {
+  text-align: center;
+  
+  background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 5s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+    </style>
   </head>
   <body>
-      <p class="linear-wipe" lang=ja>つかのまの孤独</p>
+      <p class="vertical linear-wipe" lang=ja>つかのまの孤独</p>
   </body>
 </html>
