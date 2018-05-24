@@ -2,15 +2,6 @@
 
 html { height: 100%; }
 
-body { 
-  background: #fff; 
-  text-align: center;
-  min-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 vertical { 
   -webkit-writing-mode: vertical-rl;
   -moz-writing-mode: vertical-rl;
