@@ -1,8 +1,8 @@
 @import url(//fonts.googleapis.com/earlyaccess/hannari.css);
 
-html { height: 100%; }
+body, html { height:100%; overflow:visible; } 
 
-vertical { 
+.vertical {
   -webkit-writing-mode: vertical-rl;
   -moz-writing-mode: vertical-rl;
   -ms-writing-mode: vertical-rl;
@@ -10,7 +10,7 @@ vertical {
   font-family: 'Hannari', serif;
   width: 50vw;
   font-size: 12vh;
- }
+}
 
 .linear-wipe {
   text-align: center;
