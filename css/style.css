@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&display=swap');
+
 html{
   height:100%
 }
@@ -24,6 +26,7 @@ body{
   background-color:#fff;
   height : 100%;
   color : #3d231b;
+  
 }
 @media (max-width: 600px) { 
   .left{
@@ -47,7 +50,8 @@ body{
   -moz-writing-mode: vertical-rl;
   -ms-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-  font-family: 'Hannari', serif;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 200;
   font-size: 5vh;
 }
 
