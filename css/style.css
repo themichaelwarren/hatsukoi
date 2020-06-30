@@ -100,7 +100,7 @@ body{
 .solitude:hover span {display:none}
 .solitude:hover:after {content:"Month of Solitude"}
 
-.hatsukoi {width:auto}
+.hatsukoi {width:auto;font-family: gothic-open-shaded, sans-serif; }
 .hatsukoi:hover span {display:none}
 .hatsukoi:hover:after {content:"初恋フォー"}
 
