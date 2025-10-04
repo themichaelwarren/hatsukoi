@@ -10,20 +10,20 @@ body{
   height:100%;
 }
 .hero-image {
-  background-image: url('/images/newspaper.png'); /* Replace with your image path */
+  background-image: url('/images/newspaper.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  height: 100vh; /* Default desktop height */
+  height: 100vh;
 }
 .hero-image-marie {
-  background-image: url('/images/marie.png'); /* Replace with your image path */
+  background-image: url('/images/marie.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  height: 100vh; /* Default desktop height */
+  height: 100vh;
 }
 /* Optional: Add an overlay for better text readability */
 .hero-image::before,.hero-image-marie::before {
@@ -33,7 +33,7 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3); /* Dark overlay - adjust opacity as needed */
+  background: rgba(0, 0, 0, 0.3);
 }
 /* Ensure text stays above the overlay */
 .hero-image > div,.hero-image-marie > div {
@@ -85,24 +85,37 @@ body{
   font-family: rig-solid-light-fill, monospace;
   font-size: 15vw;
   line-height: 1;
-  height:100vh; /* Changed from 100% to 100vh for consistency */
+  height:100vh;
 }
 
-/* Mobile: Use auto height to show full image width */
+/* Mobile: Use aspect ratio to match image dimensions */
 @media (max-width: 768px) {
   .hero-image,
   .hero-image-marie {
-    height: auto;
-    min-height: 100vw; /* Makes it square based on width */
-    background-size: contain; /* Shows full image without cropping */
-    background-position: top center;
+    height: 0;
+    padding-bottom: 100%; /* Default to square, adjust based on your image aspect ratio */
+    background-size: cover;
+    background-position: center;
+    position: relative;
   }
   
-  /* Adjust about class when combined with hero images */
   .about.hero-image,
   .about.hero-image-marie {
-    height: auto;
-    min-height: 100vw;
+    height: 0;
+    padding-bottom: 100%; /* Adjust this percentage based on your image aspect ratio */
+  }
+  
+  /* Position content absolutely within the aspect-ratio container */
+  .hero-image > div,
+  .hero-image-marie > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
