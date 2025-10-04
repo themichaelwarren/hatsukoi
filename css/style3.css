@@ -25,18 +25,6 @@ body{
   position: relative;
   height: 100vh; /* Default desktop height */
 }
-
-/* Mobile: Use auto height to show full image width */
-@media (max-width: 768px) {
-  .hero-image,
-  .hero-image-marie {
-    height: auto;
-    min-height: 100vw; /* Makes it square based on width */
-    background-size: contain; /* Shows full image without cropping */
-    background-position: top center;
-  }
-}
-
 /* Optional: Add an overlay for better text readability */
 .hero-image::before,.hero-image-marie::before {
   content: '';
@@ -97,8 +85,27 @@ body{
   font-family: rig-solid-light-fill, monospace;
   font-size: 15vw;
   line-height: 1;
-  height:100%;
+  height:100vh; /* Changed from 100% to 100vh for consistency */
 }
+
+/* Mobile: Use auto height to show full image width */
+@media (max-width: 768px) {
+  .hero-image,
+  .hero-image-marie {
+    height: auto;
+    min-height: 100vw; /* Makes it square based on width */
+    background-size: contain; /* Shows full image without cropping */
+    background-position: top center;
+  }
+  
+  /* Adjust about class when combined with hero images */
+  .about.hero-image,
+  .about.hero-image-marie {
+    height: auto;
+    min-height: 100vw;
+  }
+}
+
 .gradient {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
