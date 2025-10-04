@@ -82,7 +82,7 @@ body{
   justify-content : center;
   align-items : center;
   color : #fff;
-  font-family: gothic-open-shaded, monospace;
+  font-family: rig-solid-light-fill, monospace;
   font-size: 15vw;
   line-height: 1;
   height:100%;
@@ -141,7 +141,7 @@ body{
 .solitude:hover span {display:none}
 .solitude:hover:after {content:"Month of Solitude"}
 
-.hatsukoi {width:auto;font-family: gothic-open-shaded, sans-serif; }
+.hatsukoi {width:auto;font-family: rig-solid-light-fill, sans-serif; }
 .hatsukoi:hover span {display:none}
 
 
